@@ -18,10 +18,10 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
     grid-gap: 2rem;
 }
 
@@ -35,7 +35,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     z-index: 999;
-    
+
 }
 
 .navigation {
@@ -68,7 +68,7 @@ body {
 
 .block {
     box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.2);
-    background: white;   
+    background: white;
 }
 
 .hero {
@@ -81,10 +81,19 @@ body {
     color: white;
     background-image: url(https://images.unsplash.com/photo-1525548002014-e18135d814d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=4050&q=80);
     background-repeat: no-repeat;
+    background-position: -3rem;
     background-size: cover;
     color: grey;
-    
-    
+    background-color: black;
+}
+
+.hero h1, .hero h2, .hero p {
+    padding-left: 2rem;
+    color: white;
+}
+
+.hero h1:hover, .hero h2:hover, .hero p:hover {
+    text-decoration: underline;
 }
 
 .tips {
@@ -96,9 +105,12 @@ body {
     grid-row-start: 1;
     grid-row-end: 2;
     background-image: url(https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
-    background-size: cover; 
-    color: white; 
-    
+    background-size: cover;
+    color: white;
+}
+
+.tips h1, .tips h2 {
+    padding-left: 1rem;
 }
 
 .featured {
@@ -124,20 +136,26 @@ body {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 3;
-    grid-row-end: 4; 
-
+    grid-row-end: 4;
+    background-image: url(https://images.unsplash.com/photo-1493497029755-f49c8e9a8bbe?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=600&h=300&fit=crop&ixid=eyJhcHBfaWQiOjF9&flip=h);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center center;
 }
 
+.placeholder-special-edition {
+    width: 45%;
+    padding-left: 1rem;
+    color: white;
+}
 
+.placeholder-special-edition a {
+    text-decoration: none;
+    color: white;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+footer {
+    display: grid;
+    justify-content: center;
+}
